@@ -11,9 +11,11 @@
 public class Test {
     
     public static void main(String[] args){
-        System.out.println("Testar att lägga in");
-        
-        
+        Circle circle1 = new Circle();
+        Circle circle2 = new Circle("black", 3.5);
+        System.out.println(circle1.getRadius());
+        circle1.setRadius(50);
+        System.out.println(circle1.getArea());
     }
     
 }
