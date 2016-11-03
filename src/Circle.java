@@ -4,7 +4,7 @@ public class Circle {
     private double radius;
     private String colour;
     
-    //addding constructors, with default if there is no set value
+    //adding constructors, with default if there is no set value
     public Circle(){
         radius = 1.0;
         colour = "green";
