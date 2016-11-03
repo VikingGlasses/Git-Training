@@ -19,9 +19,18 @@ public class Circle {  // Save as "Circle.java"
       color = "red";
    }
    
+   public Circle(double r, String c) {
+       this.radius = r;
+       this.color = c;
+   }
+   
    // A public method for retrieving the radius
    public double getRadius() {
      return radius; 
+   }
+   
+   public String getColor() {
+       return color;
    }
    
    // A public method for computing the area of circle
