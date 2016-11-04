@@ -11,14 +11,13 @@
 public class Test {
 
     public static void main(String[] args) {
-        
-        MyPoint point = new MyPoint(3,4);
-        MyCircle circle = new MyCircle(point,4);
+
         
         
-        MyTriangle tri = new MyTriangle(1,2,3,4,5,6);
+        MyTriangle tri = new MyTriangle(1,2,1,22,2,2);
         
-        System.out.println(tri.toString());
+        System.out.println(tri.getType());
+        
         
 
     }
