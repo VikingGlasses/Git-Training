@@ -6,17 +6,17 @@
 public class Book {
 
     private String name;
-    private Author author;
+    private Author author[];
     private double price;
     private int qty;
 
-    public Book(String name, Author author, double price) {
+    public Book(String name, Author[] author, double price) {
         this.name = name;
         this.author = author;
         this.price = price;
     }
 
-    public Book(String name, Author author, double price, int qty) {
+    public Book(String name, Author[] author, double price, int qty) {
         this.name = name;
         this.author = author;
         this.price = price;
@@ -27,8 +27,12 @@ public class Book {
         return this.name;
     }
 
-    public Author getAuthor() {
-        return this.author;
+    public String getAuthor() {
+        String out = "";
+        for (Author a : this.author){
+            out += a;
+        }
+        return out;
     }
 
     public double getPrice() {
@@ -47,8 +51,14 @@ public class Book {
         this.qty = qty;
     }
 
-    public String toString(Author author) {
-        return "Book: " + this.name + "Author: " + author
+    public String toString() {
+        String out="";
+        for (int i = 0; i<this.author.length;i++){
+            out += this.author[i].getName() + " ";
+        }
+        
+        
+        return "Book: " + this.name + "Author: " + out
                 + "Price: " + this.getPrice() + "qty: " + this.getQty();
     }
 
