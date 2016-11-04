@@ -14,7 +14,7 @@ public class Test {
 
         
         
-        MyTriangle tri = new MyTriangle(1,2,1,22,2,2);
+        MyTriangle tri = new MyTriangle(1,2,1,2,1,2);
         
         System.out.println(tri.getType());
         
