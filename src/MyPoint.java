@@ -39,7 +39,6 @@ public class MyPoint {
         this.x = x;
         this.y = y;
     }
-    //hej
 
     public String toString() {
         return "X: " + this.x + " Y: " + this.y;
