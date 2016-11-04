@@ -1,40 +1,50 @@
-/*
- * The Circle class models a circle with a radius and color.
- */
-public class Circle {  // Save as "Circle.java"
-   // private instance variable, not accessible from outside this class
-   private double radius;
-   private String color;
-   
-   // The default constructor with no argument.
-   // It sets the radius and color to their default value.
-   public Circle() {
-      radius = 1.0;
-      color = "red";
-   }
-   
-   // 2nd constructor with given radius, but color default
-   public Circle(double r) {
-      radius = r;
-      color = "red";
-   }
-   
-   public Circle(double r, String c) {
-       this.radius = r;
-       this.color = c;
-   }
-   
-   // A public method for retrieving the radius
-   public double getRadius() {
-     return radius; 
-   }
-   
-   public String getColor() {
-       return color;
-   }
-   
-   // A public method for computing the area of circle
-   public double getArea() {
-      return radius*radius*Math.PI;
-   }
+
+public class Circle {
+    private double radius;
+    private String colour;
+    
+    //addding constructors, with default if there is no set value
+    public Circle(){
+        radius = 1.0;
+        colour = "green";
+    }
+    public Circle(double radius){
+        this.radius = radius;
+        colour = "green";
+    }
+    public Circle(String colour, double radius){
+        this.colour = colour;
+        this.radius = radius;
+    }
+    
+    //setters
+    public void setRadius(double radius){
+        this.radius =  radius;
+    }
+    public void setColour(String colour){
+        this.colour = colour;
+    }
+    //getters
+    public double getRadius(){
+        return radius;
+    }
+    public String getColour(){
+        return colour;
+    }
+    
+    public double getArea(){
+        double area = radius*radius* Math.PI;
+        return area;
+    }
+    
+    //toStringmetod
+    public String toString(){
+        String output = "The radius of you circle is: "+ radius
+                        + "\n The colour of your circle is: " + colour;
+        return output;
+    }
+    
+
+    
+    
 }
