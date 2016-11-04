@@ -3,10 +3,11 @@ public class MyCircle {
 
     private MyPoint center;
     private int radius = 1;
+    
 
     public MyCircle(int x, int y, int radius) {
         center = new MyPoint(x, y);
-        this.radius = radius;
+        this.radius = radius;        
     }
 
     public MyCircle(MyPoint center, int radius) {
@@ -22,6 +23,7 @@ public class MyCircle {
     public int getRadius() {
         return radius;
     }
+    
 
     public void setRadius(int radius) {
         this.radius = radius;
@@ -75,6 +77,7 @@ public class MyCircle {
     }
     public double distance(MyCircle another){
         return this.center.distance(another.center);
+        // hej
+        
     }
-
 }

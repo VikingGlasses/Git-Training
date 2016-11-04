@@ -56,6 +56,7 @@ public class Book {
         for (int i = 0; i<this.author.length;i++){
             out += this.author[i].getName() + ", ";
         }
+        //hej
         
         
         return "Book: " + this.name + "\nAuthor: " + out
