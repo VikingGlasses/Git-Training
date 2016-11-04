@@ -41,7 +41,7 @@ public class MyPoint {
     }
 
     public String toString() {
-        return "X: " + this.x + "Y: " + this.y;
+        return "X: " + this.x + " Y: " + this.y;
     }
 
     public double distance(int x2, int y2) {
