@@ -54,12 +54,12 @@ public class Book {
     public String toString() {
         String out="";
         for (int i = 0; i<this.author.length;i++){
-            out += this.author[i].getName() + " ";
+            out += this.author[i].getName() + ", ";
         }
         
         
-        return "Book: " + this.name + "Author: " + out
-                + "Price: " + this.getPrice() + "qty: " + this.getQty();
+        return "Book: " + this.name + "\nAuthor: " + out
+                + "\nPrice: " + this.getPrice() + "\nqty: " + this.getQty();
     }
 
 }
