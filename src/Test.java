@@ -26,7 +26,7 @@ public class Test {
         minBok.setQty(7);
         
         System.out.println(minBok);
-
+        
     }
 
 }
