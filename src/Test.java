@@ -14,7 +14,12 @@ public class Test {
         
         MyPoint point = new MyPoint(3,4);
         MyCircle circle = new MyCircle(point,4);
-        circle.
+        
+        
+        MyTriangle tri = new MyTriangle(1,2,3,4,5,6);
+        
+        System.out.println(tri.toString());
+        
 
     }
 
