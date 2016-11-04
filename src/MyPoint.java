@@ -45,17 +45,23 @@ public class MyPoint {
     }
 
     public double distance(int x2, int y2) {
-        return (x2 - this.x) * (x2 - this.x) + (y2 - this.y) * (y2 - this.y);
+        double diffx = this.x - x2;
+        double diffy = this.y - y2;
+        return (Math.sqrt(diffx*diffx + diffy*diffy));
 
     }
 
     public double distance(MyPoint myPoint) {
-        return (myPoint.getX() - this.x) * (myPoint.getX() - this.x)
-                + (myPoint.getY() - this.y) * (myPoint.getY() - this.y);
+        double diffx = this.x - myPoint.getX();
+        double diffy = this.y - myPoint.getY();
+
+        return (Math.sqrt(diffx*diffx + diffy*diffy));
     }
-    
-    public double distance(){
-        return (0 - this.x) * (0 - this.x) + (0 - this.y) * (0 - this.y);
+
+    public double distance() {
+        double diffx = this.x - 0;
+        double diffy = this.y - 0;
+        return (Math.sqrt(diffx*diffx + diffy*diffy));
     }
 
 }

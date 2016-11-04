@@ -27,6 +27,12 @@ public class Test {
         
         System.out.println(minBok);
         
+        MyPoint p1 = new MyPoint(3,4);
+        MyPoint p2 = new MyPoint(3,4);
+        System.out.println(p1.distance(5,6));
+        System.out.println(p2.distance(p1));
+
+        
     }
 
 }
