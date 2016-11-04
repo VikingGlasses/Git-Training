@@ -77,7 +77,7 @@ public class MyCircle {
     }
     public double distance(MyCircle another){
         return this.center.distance(another.center);
-        // hej
+        // hej!
         
     }
 }
