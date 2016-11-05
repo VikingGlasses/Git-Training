@@ -1,41 +1,42 @@
 
 public class Invoice {
+
     private final int ID;
     private Customer customer;
     private double amount;
-    
-    public Invoice(int ID, Customer customer, double amount){
+
+    public Invoice(int ID, Customer customer, double amount) {
         this.ID = ID;
         this.customer = customer;
         this.amount = amount;
     }
-    
-    public int getID(){
+
+    public int getID() {
         return this.ID;
     }
-    
-    public Customer getCustomer(){
+
+    public Customer getCustomer() {
         return this.customer;
     }
-    
-    public void setCostumer(Customer customer){
+
+    public void setCostumer(Customer customer) {
         this.customer = customer;
     }
-    
-    public double getAmount(){
+
+    public double getAmount() {
         return this.amount;
     }
-    
-    public void setAmount(double amount){
+
+    public void setAmount(double amount) {
         this.amount = amount;
     }
-    
-    public String getCustomerName(){
+
+    public String getCustomerName() {
         return this.customer.getName();
     }
-    
-    public double getAmountAfterDiscount(){
-        return 2; //todo
+
+    public double getAmountAfterDiscount() {
+        return (this.amount * (1.0 - (customer.getDiscount() * 0.01)));
     }
-    
+
 }

@@ -3,6 +3,7 @@ public class Customer {
 
     private final int ID;
     private String name;
+    // discount ex: int 25 is 25%
     private int discount;
 
     public Customer(int ID, String name, int discount) {
