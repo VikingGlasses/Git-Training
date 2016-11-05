@@ -55,8 +55,7 @@ public class Book {
         String out="";
         for (int i = 0; i<this.author.length;i++){
             out += this.author[i].getName() + ", ";
-        }
-        
+        }        
         
         return "Book: " + this.name + "\nAuthor: " + out
                 + "\nPrice: " + this.getPrice() + "\nqty: " + this.getQty();
