@@ -32,7 +32,7 @@ public class Account {
     }
     
     public String toString(){
-        return ""; //TODO
+        return "Name; " + customer.toString() + "\nBalance: " + this.balance; 
     }
     
     
