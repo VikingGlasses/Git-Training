@@ -11,10 +11,15 @@
 public class Test {
 
     public static void main(String[] args) {
-        Customer c1 = new Customer(001,"harald",10);
-        Invoice inv = new Invoice(001,c1,100);
+        Customer myCustomer = new Customer(007,"Bond",50);
+        Account myAc = new Account(001,myCustomer,1000);
         
-        System.out.println(inv.getAmountAfterDiscount());
+        
+        myAc = myAc.withraw(1200);
+        
+        
+        System.out.println(myAc);
+        
 
     }
 
