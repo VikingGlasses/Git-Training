@@ -8,10 +8,21 @@
  *
  * @author Harald
  */
+import java.util.*;
+
 public class Test {
 
     public static void main(String[] args) {
 
+        LinkedHashSet<String> myLinkedHashSet = new LinkedHashSet<String>();
+        myLinkedHashSet.add("Beatrice");
+        myLinkedHashSet.add("Ellinor");
+        System.out.println(myLinkedHashSet); //ett Set har inga index, går ej att hämta specifik
+        
+        TreeMap<String, String> myTreeMap = new TreeMap<String, String>();
+        myTreeMap.put("katt", "cat");
+        myTreeMap.put("hund", "dog");
+        System.out.println(myTreeMap.get("hund"));
         
         Author author1 = new Author("Harald Billstein","harald@epost.com",'M');
         Author author2 = new Author("Lisette Billstein","Lisette@epost.com",'F');
